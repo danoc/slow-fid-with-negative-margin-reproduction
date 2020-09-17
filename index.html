@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slow FID with negative margin on touch devices</title>
+  </head>
+  <body>
+    <h1>Slow FID with negative margin on touch devices</h1>
+
+    <p>
+      This is a reproduction of an issue where the use of negative margins can
+      drastically slow down First Input Delay on touch devices.
+    </p>
+
+    <ol>
+      <li>
+        <a href="example-1.html">Example 1:</a> Slow FID on touch devices
+        because of negative margins
+      </li>
+      <li>
+        <a href="example-2.html">Example 2:</a> Fast FID on all devices since
+        there is no negative margin.
+      </li>
+      <li>
+        <a href="example-3.html">Example 3:</a> Fast FID on all devices since
+        the negative margin is a smaller value than in Example #1.
+      </li>
+    </ol>
+  </body>
+</html>
